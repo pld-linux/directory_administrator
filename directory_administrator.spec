@@ -3,7 +3,7 @@ Summary(es):	Administrador de usuarios/grupos y control de acceso LDAP
 Summary(pl):	Administrator u¿ytkowników/grup POSIX us³ug katalogowych LDAP
 Summary(pt_BR):	Administrador de usuários/controle de acesso/grupos para LDAP
 Name:		directory_administrator
-Version:	1.3.4
+Version:	1.4
 Release:	1
 License:	GPL
 Group:		X11/Applications
