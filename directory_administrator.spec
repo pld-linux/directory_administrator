@@ -14,11 +14,9 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gnome-libs-devel
 BuildRequires:	gtk+-devel >= 1.2.3
-BuildRequires:	libtool
 BuildRequires:	openldap-devel
 Requires:	openldap
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-%define	_prefix	/usr/X11R6
 
 %description
 Directory administrator is a POSIX user/group manager for LDAP
@@ -43,7 +41,6 @@ przekierowaniem poczty.
 
 %build
 rm -f missing
-%{__libtoolize}
 %{__aclocal} -I macros
 %{__autoconf}
 %{__automake}
@@ -52,6 +49,7 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
@@ -60,8 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README ChangeLog AUTHORS CREDITS NEWS
-%attr(0755,root,root) %{_bindir}/directory_administrator
-#%attr(0644,root,root) %{_libdir}/menu/directory_administrator
-%attr(0644,root,root) %{_applnkdir}/Network/Misc/*
-%dir %{_datadir}/pixmaps/directory_administrator/
-%{_datadir}/pixmaps/directory_administrator/*
+%attr(755,root,root) %{_bindir}/directory_administrator
+#%{_libdir}/menu/directory_administrator
+%{_applnkdir}/Network/Misc/*
+%{_pixmapsdir}/directory_administrator
