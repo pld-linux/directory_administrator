@@ -3,8 +3,8 @@ Summary(es):	Administrador de usuarios/grupos y control de acceso LDAP
 Summary(pl):	Administrator u¿ytkowników/grup POSIX us³ug katalogowych LDAP
 Summary(pt_BR):	Administrador de usuários/controle de acesso/grupos para LDAP
 Name:		directory_administrator
-Version:	1.1.9
-Release:	0.1
+Version:	1.3.4
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://diradmin.open-it.org/%{name}-%{version}.tar.gz
@@ -18,7 +18,7 @@ BuildRequires:	libtool
 BuildRequires:	openldap-devel
 Requires:	openldap
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
+%define	_prefix	/usr/X11R6
 
 %description
 Directory administrator is a POSIX user/group manager for LDAP
@@ -62,5 +62,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog AUTHORS CREDITS NEWS
 %attr(0755,root,root) %{_bindir}/directory_administrator
 #%attr(0644,root,root) %{_libdir}/menu/directory_administrator
-%attr(0644,root,root) %{_applnkdir}/System/*
-%attr(0644,root,root) %{_datadir}/pixmaps/directory_administrator
+%attr(0644,root,root) %{_applnkdir}/Network/Misc/*
+%dir %{_datadir}/pixmaps/directory_administrator/
+%{_datadir}/pixmaps/directory_administrator/*
