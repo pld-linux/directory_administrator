@@ -3,12 +3,12 @@ Summary(es):	Administrador de usuarios/grupos y control de acceso LDAP
 Summary(pl):	Administrator u¿ytkowników/grup POSIX us³ug katalogowych LDAP
 Summary(pt_BR):	Administrador de usuários/controle de acesso/grupos para LDAP
 Name:		directory_administrator
-Version:	1.4
+Version:	1.5.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://diradmin.open-it.org/%{name}-%{version}.tar.gz
-# Source0-md5:	5bd34896450f7719b7a58f250746e9e1
+# Source0-md5:	6ce1d8f2715ed100ec297779e7557d46
 URL:		http://diradmin.open-it.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
