@@ -14,9 +14,10 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gnome-libs-devel
 BuildRequires:	gtk+-devel >= 1.2.3
+BuildRequires:	libtool
 BuildRequires:	openldap-devel
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	openldap
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define         _prefix         /usr/X11R6
 %define         _mandir         %{_prefix}/man
@@ -45,7 +46,7 @@ przekierowaniem poczty.
 %build
 rm -f missing
 %{__libtoolize}
-aclocal -I macros
+%{__aclocal} -I macros
 %{__autoconf}
 %{__automake}
 %configure
@@ -64,4 +65,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(0755,root,root) %{_bindir}/directory_administrator
 #%attr(0644,root,root) %{_libdir}/menu/directory_administrator
 %attr(0644,root,root) %{_applnkdir}/System/*
-%attr(0644,root,root) %{_datadir}/pixmaps/directory_administrator/*
+%attr(0644,root,root) %{_datadir}/pixmaps/directory_administrator
