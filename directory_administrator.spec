@@ -1,7 +1,7 @@
 Summary:	LDAP directory user/group/access control manager
-Summary(pt_BR):	Administrador de usu=E1rios/controle de acesso/grupos para LDAP
 Summary(es):	Administrador de usuarios/grupos y control de acceso LDAP
-Summary(pl):	Administrator uzytkownikow/grup POSIX us³ug katalogowych LDAP
+Summary(pl):	Administrator u¿ytkowników/grup POSIX us³ug katalogowych LDAP
+Summary(pt_BR):	Administrador de usuários/controle de acesso/grupos para LDAP
 Name:		directory_administrator
 Version:	1.1.8
 Release:	0.1
@@ -10,10 +10,10 @@ Group:		X11/Applications
 Source0:	http://diradmin.open-it.org/%{name}-%{version}.tar.gz
 Patch0:		%{name}-desktop.patch
 URL:		http://diradmin.open-it.org/
-BuildRequires:	gtk+-devel >= 1.2.3
-BuildRequires:	gnome-libs-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gnome-libs-devel
+BuildRequires:	gtk+-devel >= 1.2.3
 BuildRequires:	openldap-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	openldap
@@ -34,7 +34,9 @@ rutas de correo electrónico para aquellos servidores de correo que lo
 soporten.
 
 %description -l pl
-Directory Administrator jest zarz±dc± uzytkownikow/grup POSIX us³ug katalogowych LDAP. Umo¿liwia równie¿ zarz±dzanie prawami dostêpu oraz przekierowaniem poczty
+Directory Administrator jest zarz±dc± u¿ytkowników/grup POSIX us³ug
+katalogowych LDAP. Umo¿liwia równie¿ zarz±dzanie prawami dostêpu oraz
+przekierowaniem poczty.
 
 %prep
 %setup -q
