@@ -19,8 +19,6 @@ BuildRequires:	openldap-devel
 Requires:	openldap
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _prefix         /usr/X11R6
-%define         _mandir         %{_prefix}/man
 
 %description
 Directory administrator is a POSIX user/group manager for LDAP
