@@ -8,6 +8,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://diradmin.open-it.org/%{name}-%{version}.tar.gz
+# Source0-md5:	5bd34896450f7719b7a58f250746e9e1
 URL:		http://diradmin.open-it.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
