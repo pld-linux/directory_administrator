@@ -1,0 +1,11 @@
+--- directory_administrator-1.1.8/configure.in.orig	Sun Jun  2 23:14:35 2002
++++ directory_administrator-1.1.8/configure.in	Sun Jun  2 23:17:31 2002
+@@ -24,7 +24,7 @@
+ PACKAGE_PIXMAPS_DIR="/share/pixmaps/${PACKAGE}"
+ AC_SUBST(PACKAGE_PIXMAPS_DIR)
+ dnl Subst PACKAGE_APPLNK_DIR.
+-PACKAGE_APPLNK_DIR="/share/gnome/apps/System"
++PACKAGE_APPLNK_DIR="/share/applnk/System"
+ SYSTEM_MENU_DIR="/lib/menu"
+ 
+ AC_OUTPUT([
