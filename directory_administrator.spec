@@ -54,7 +54,7 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network/Misc,%{_pixmapsdir}/directory_a
 
 install applnk/dragonfear-directory_administrator.desktop \
 	$RPM_BUILD_ROOT%{_applnkdir}/Network/Misc/directory_administrator.desktop
-install pixmaps/*.{xpm,png} $RPM_BUILD_ROOT%{_pixmapsdir}/directory_administrator 
+install pixmaps/*.{xpm,png} $RPM_BUILD_ROOT%{_pixmapsdir}/directory_administrator
 
 %clean
 rm -rf $RPM_BUILD_ROOT
