@@ -3,12 +3,13 @@ Summary(es):	Administrador de usuarios/grupos y control de acceso LDAP
 Summary(pl):	Administrator u¿ytkowników/grup POSIX us³ug katalogowych LDAP
 Summary(pt_BR):	Administrador de usuários/controle de acesso/grupos para LDAP
 Name:		directory_administrator
-Version:	1.5.1
+Version:	1.6.0
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://diradmin.open-it.org/%{name}-%{version}.tar.gz
-# Source0-md5:	6ce1d8f2715ed100ec297779e7557d46
+Source0:	http://diradmin.open-it.org/releases/%{name}-%{version}.tar.gz
+# Source0-md5:	ab0631f5e91c0dfe48c1be240eb01437
+Patch0:		%{name}-desktop.patch
 URL:		http://diradmin.open-it.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -35,7 +36,8 @@ katalogowych LDAP. Umo¿liwia równie¿ zarz±dzanie prawami dostêpu oraz
 przekierowaniem poczty.
 
 %prep
-%setup -q
+%setup -q -n diradmin-%{version}
+%patch0 -p1
 
 %build
 rm -f missing
@@ -47,13 +49,11 @@ rm -f missing
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Network/Misc,%{_pixmapsdir}/directory_administrator}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}/directory_administrator}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install applnk/dragonfear-directory_administrator.desktop \
-	$RPM_BUILD_ROOT%{_applnkdir}/Network/Misc/directory_administrator.desktop
 install pixmaps/*.{xpm,png} $RPM_BUILD_ROOT%{_pixmapsdir}/directory_administrator
 
 %clean
@@ -63,5 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README ChangeLog AUTHORS CREDITS NEWS
 %attr(755,root,root) %{_bindir}/directory_administrator
-%{_applnkdir}/Network/Misc/*
+%{_desktopdir}/*.desktop
 %{_pixmapsdir}/directory_administrator
