@@ -1,4 +1,4 @@
---- ../BUILD/diradmin-1.6.0/applnk/dragonfear-directory_administrator.desktop	2005-01-05 19:53:35.000000000 +0000
+--- diradmin-1.6.0/applnk/dragonfear-directory_administrator.desktop	2005-01-05 19:53:35.000000000 +0000
 +++ directory_administrator.desktop	2005-06-02 00:07:56.585747184 +0000
 @@ -1,13 +1,12 @@
  [Desktop Entry]
