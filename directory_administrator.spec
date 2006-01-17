@@ -4,7 +4,7 @@ Summary(pl):	Administrator u¿ytkowników/grup POSIX us³ug katalogowych LDAP
 Summary(pt_BR):	Administrador de usuários/controle de acesso/grupos para LDAP
 Name:		directory_administrator
 Version:	1.6.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://diradmin.open-it.org/releases/%{name}-%{version}.tar.gz
@@ -14,7 +14,7 @@ URL:		http://diradmin.open-it.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gnome-libs-devel
-BuildRequires:	openldap-devel
+BuildRequires:	openldap-devel >= 2.3.0
 Requires:	openldap
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
