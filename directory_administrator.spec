@@ -1,7 +1,7 @@
 Summary:	LDAP directory user/group/access control manager
-Summary(es):	Administrador de usuarios/grupos y control de acceso LDAP
-Summary(pl):	Administrator uøytkownikÛw/grup POSIX us≥ug katalogowych LDAP
-Summary(pt_BR):	Administrador de usu·rios/controle de acesso/grupos para LDAP
+Summary(es.UTF-8):   Administrador de usuarios/grupos y control de acceso LDAP
+Summary(pl.UTF-8):   Administrator u≈ºytkownik√≥w/grup POSIX us≈Çug katalogowych LDAP
+Summary(pt_BR.UTF-8):   Administrador de usu√°rios/controle de acesso/grupos para LDAP
 Name:		directory_administrator
 Version:	1.6.0
 Release:	2
@@ -23,16 +23,16 @@ Directory administrator is a POSIX user/group manager for LDAP
 directories. It can also manage access controls, departmental and
 e-mail routing information.
 
-%description -l es
+%description -l es.UTF-8
 Directory administrator es un administrador de usuarios/grupos POSIX
 para servidores de directorio LDAP. Directory administrator permite
-administrar tambiÈn controles de acceso, informaciÛn departamental y
-rutas de correo electrÛnico para aquellos servidores de correo que lo
+administrar tambi√©n controles de acceso, informaci√≥n departamental y
+rutas de correo electr√≥nico para aquellos servidores de correo que lo
 soporten.
 
-%description -l pl
-Directory Administrator jest zarz±dc± uøytkownikÛw/grup POSIX us≥ug
-katalogowych LDAP. Umoøliwia rÛwnieø zarz±dzanie prawami dostÍpu oraz
+%description -l pl.UTF-8
+Directory Administrator jest zarzƒÖdcƒÖ u≈ºytkownik√≥w/grup POSIX us≈Çug
+katalogowych LDAP. Umo≈ºliwia r√≥wnie≈º zarzƒÖdzanie prawami dostƒôpu oraz
 przekierowaniem poczty.
 
 %prep
