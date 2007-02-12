@@ -1,7 +1,7 @@
 Summary:	LDAP directory user/group/access control manager
-Summary(es.UTF-8):   Administrador de usuarios/grupos y control de acceso LDAP
-Summary(pl.UTF-8):   Administrator użytkowników/grup POSIX usług katalogowych LDAP
-Summary(pt_BR.UTF-8):   Administrador de usuários/controle de acesso/grupos para LDAP
+Summary(es.UTF-8):	Administrador de usuarios/grupos y control de acceso LDAP
+Summary(pl.UTF-8):	Administrator użytkowników/grup POSIX usług katalogowych LDAP
+Summary(pt_BR.UTF-8):	Administrador de usuários/controle de acesso/grupos para LDAP
 Name:		directory_administrator
 Version:	1.6.0
 Release:	2
