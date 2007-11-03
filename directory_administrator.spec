@@ -14,7 +14,7 @@ URL:		http://diradmin.open-it.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gnome-libs-devel
-BuildRequires:	openldap-devel >= 2.3.0
+BuildRequires:	openldap-devel >= 2.4.6
 Requires:	openldap
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
