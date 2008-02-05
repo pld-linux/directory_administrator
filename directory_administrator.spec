@@ -3,12 +3,12 @@ Summary(es.UTF-8):	Administrador de usuarios/grupos y control de acceso LDAP
 Summary(pl.UTF-8):	Administrator użytkowników/grup POSIX usług katalogowych LDAP
 Summary(pt_BR.UTF-8):	Administrador de usuários/controle de acesso/grupos para LDAP
 Name:		directory_administrator
-Version:	1.6.0
-Release:	2
+Version:	1.7.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://diradmin.open-it.org/releases/%{name}-%{version}.tar.gz
-# Source0-md5:	ab0631f5e91c0dfe48c1be240eb01437
+# Source0-md5:	d417c25765b58629e63daf6238d28ee8
 Patch0:		%{name}-desktop.patch
 URL:		http://diradmin.open-it.org/
 BuildRequires:	autoconf
@@ -36,8 +36,8 @@ katalogowych LDAP. Umożliwia również zarządzanie prawami dostępu oraz
 przekierowaniem poczty.
 
 %prep
-%setup -q -n diradmin-%{version}
-%patch0 -p1
+%setup -q
+#%patch0 -p1
 
 %build
 rm -f missing
@@ -45,7 +45,9 @@ rm -f missing
 %{__autoconf}
 %{__automake}
 %configure
-%{__make}
+%{__make} \
+	CFLAGS="%{rpmcflags} -lldap -llber" \
+	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
