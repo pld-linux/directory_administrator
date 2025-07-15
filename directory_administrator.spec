@@ -37,7 +37,7 @@ przekierowaniem poczty.
 
 %prep
 %setup -q
-#%patch0 -p1
+#%%patch0 -p1
 
 %build
 rm -f missing
